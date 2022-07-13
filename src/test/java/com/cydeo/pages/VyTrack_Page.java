@@ -23,7 +23,7 @@ public class VyTrack_Page {
     @FindBy (xpath = "//a[@title='Reset']")
     public WebElement reset;
 
-    @FindBy (xpath = "//a[@title='Grid Settings']")
-    public WebElement GridSettings;
+    @FindBy (xpath = "//a[@title='Reset']//following-sibling::div//a[@title='Grid Settings']")
+    public WebElement gridSettings;
 
 }

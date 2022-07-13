@@ -23,11 +23,12 @@ public class VyTrackBasePage {
 
 
     public void login(){
-        Driver.getDriver().get(ConfigurationReader.getProperty("VyTrack_URL"));
-        usernameBox.sendKeys(ConfigurationReader.getProperty("VyTrackUsername"));
-        passwordBox.sendKeys(ConfigurationReader.getProperty("VyTrackPassword"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("url.login.page"));
+        usernameBox.sendKeys(ConfigurationReader.getProperty("driver.username"));
+        passwordBox.sendKeys(ConfigurationReader.getProperty("password"));
         loginBut.click();
 
     }
+
 
 }
